@@ -1,0 +1,13 @@
+---
+interface Props {
+	image: string;
+	name: string;
+}
+
+const { image, name } = Astro.props;
+---
+
+<div class="border-2 w-64 h-64 m-4 flex justify-center items-center rounded-3xl overflow-hidden">
+	<img src=`${image}` alt=`${name}` class="object-cover w-full h-full rounded-2xl">
+</div>
+
