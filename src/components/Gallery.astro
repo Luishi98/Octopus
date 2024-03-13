@@ -1,8 +1,9 @@
 ---
 import Card from './Card.astro'
+const {id} = Astro.props
 ---
 
-<section>
+<section id={id}>
   <h1 class="text-center text-6xl text-gray-300 my-12">TRABAJOS</h1>
 
   <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 w-4/5 mx-auto">

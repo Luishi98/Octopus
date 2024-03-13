@@ -1,4 +1,8 @@
-<header class="flex h-screen items-center justify-center w-full">
+---
+const {id} = Astro.props
+---
+
+<header id={id} class="flex h-screen items-center justify-center w-full">
   <div class="flex flex- col justify-between item-center gap-20">
     <div>
       <img src="/assets/logo.png" alt="Logo" class="w-40 h-40" />
